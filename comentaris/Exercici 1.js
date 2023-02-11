@@ -27,7 +27,7 @@ const App = () => {
                 // per a veure les dades de l'API per consola, hauria de fer-lo de tota aquesta variable (response.data...)
                 // si ho fes de "starships" NO funcionaria encara.
                 setStarships(response.data.results)
-
+// response és la resposta que s'espera, data són totes les dates de l'Api, results són aquelles dades/"data" específiques.
             })
     }, [])
     // Aquest "[]" no té cap element a l'array, perque, només vull executar-lo una vegada. Recordem que si li posès
