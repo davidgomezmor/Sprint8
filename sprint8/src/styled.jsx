@@ -1,7 +1,15 @@
 import styled, { keyframes } from "styled-components";
 
+export const NavBar = styled.nav`
+display: flex;
+background-color: black;
+color: white;
+` 
+
 export const Container = styled.div`
   display: flex;
+  background-color: black;
+  color: white
 `;
 
 export const Button = styled.button`
@@ -9,9 +17,13 @@ export const Button = styled.button`
   color: white;
   padding: 10px 20px;
   border: none;
-  border-radius: 25px;
+  border-radius: 10px;
   font-family: 'Star Jedi', sans-serif;
   cursor: pointer;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   flex: 1;
   &:hover {
     background-color: darkgrey;
@@ -34,8 +46,10 @@ export const ContainerDetails = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  flex: 1;
+  flex: 6;
   padding-left: 20px;
+  position: fixed;
+  width: 100%;
 
   h2 {
   font-size: 36px;

@@ -30,9 +30,9 @@ const App = () => {
 // response és la resposta que s'espera, data són totes les dates de l'Api, results són aquelles dades/"data" específiques.
             })
     }, [])
-    // Aquest "[]" no té cap element a l'array, perque, només vull executar-lo una vegada. Recordem que si li posès
-    // algun element dins, l'useEffect s'executaria cada vegada que aquest element canviés.
-
+    // Aquest "[]" no té cap element a l'array, perque, només vull executar-lo una vegada. Aquí només vull cridar l'API
+    // una vegada. Recordem que si li posés algun element dins, l'useEffect s'executaria cada vegada que aquest canviés.
+    // La funcionalitat d'aquest "[]" s'anomena, per cert, matriu de dependències.
     return (
         <div>
             <h1>Star Wars</h1>
