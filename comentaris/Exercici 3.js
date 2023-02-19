@@ -68,6 +68,7 @@ const App = () => {
 
                                 <Button>
                                     Name: {starship.name}
+                                    Name: {starship.model}
                                 </Button>
                             </p>
                         ))}
