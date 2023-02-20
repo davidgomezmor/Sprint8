@@ -1,5 +1,6 @@
 import styled from "styled-components";
-import galaxyBackground from './assets/galaxy.jpg';
+import galaxyBackground from '../assets/galaxy.jpg';
+;
 
 export const Header = styled.nav`
   .img-container {
@@ -20,6 +21,18 @@ export const Header = styled.nav`
     float: center;
     
   }
+  @media screen and (max-width: 1200px) { 
+  .img-container {
+    margin-left: 0; 
+  }
+  }
+  @media screen and (max-width: 710px) { 
+  .img-container {
+    margin-left: -200px; 
+  }
+
+}
+
 
   ul {
     list-style-type: none;
@@ -142,11 +155,11 @@ export const WelcomeButton = styled.button`
 export const Button = styled.button`
   background-color: #272727;
   color: white;
-  border: none;
+  border: 10px;
   border-radius: 10px;
   font-family: sans-serif;
   cursor: pointer;
-  width: 100%;
+  width: 80%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -183,7 +196,7 @@ export const Container1 = styled.div`
   margin-bottom: 5%;
 `;
 export const Container2 = styled.div`
-  flex: 1;
+
 `;
 
 export const ContainerDetails = styled.div`
@@ -198,14 +211,120 @@ export const ContainerDetails = styled.div`
   flex-direction: column;
   justify-content: space-between;
   flex: 6;
-  position: fixed;
   width: 60%;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  
 
   h2 {
-  font-size: 36px;
-  margin-bottom: 20px;
-  justify-content: center;
+    font-size: 36px;
+    margin-bottom: 50px;
+    justify-content: center;
+  }
+
+  button {
+  background-color: #272727;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-family: sans-serif;
+  cursor: pointer;
+  padding: 0;
+  width: 40px;
+  height: 40px;
+  font-size: 20px;
+  margin-top: -290px; 
+  margin-left: -150px;
+ 
+  &:hover {
+    background-color: darkgrey;
+  }
 }
+ `;
+
+export const ContainerInfo1 = styled.div`
+
+ display: flex;
+ font-family: sans-serif;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+ background-size: contain; 
+ background-position: center; 
+ font-family: sans-serif;
+ background-repeat: no-repeat;
+
+`;
+export const ContainerColumnsInfo = styled.div`
+  display: flex;
+  color: white;
+ 
+`;
+
+export const ContainerInfo2 = styled.div`
+
+display: flex;
+flex: 5;
+font-family: sans-serif;
+flex-direction: column;
+background-size: contain; 
+background-position: center; 
+font-family: sans-serif;
+background-repeat: no-repeat;
+`;
+
+export const ContainerInfo3 = styled.div`
+
+display: flex;
+flex: 5;
+font-family: sans-serif;
+flex-direction: column;
+background-size: contain; 
+background-position: center; 
+font-family: sans-serif;
+background-repeat: no-repeat;
 `;
 
 
+
+export const RegisterContainer = styled.div`
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  font-family: sans-serif;
+  letter-spacing: 4px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background-color: black;
+  background-size: contain; 
+  background-position: center; 
+  font-family: sans-serif;
+`;
+
+export const RegisterBox = styled.div`
+margin-bottom: 20px;
+
+
+button {
+  background-color: #F5A623;
+  border-radius: 5px;
+  color: black; 
+  font-family: sans-serif;
+  padding: 5px;
+  margin: 0 auto;
+  text-align: center;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  letter-spacing: 4px;
+   align-items: center;
+  &:hover {
+    background-color: yellow;
+  }
+}
+`
